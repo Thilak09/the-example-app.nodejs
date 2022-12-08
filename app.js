@@ -6,6 +6,7 @@ const express = require('express')
 const logger = require('morgan')
 const querystring = require('querystring')
 const helmet = require('helmet')
+const newrelic = require('newrelic')
 
 // Load environment variables using dotenv
 require('dotenv').config({ path: 'variables.env' })
