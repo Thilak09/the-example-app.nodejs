@@ -1,11 +1,12 @@
-FROM node:9
+FROM node:latest
 
 WORKDIR /app
 
 RUN npm install -g contentful-cli
 
 COPY package.json .
-RUN npm install
+RUN npm install newrelic
+
 
 COPY . .
 
